@@ -35,6 +35,7 @@ def load_user(user_id):
 
 
 # ~~~~~~~~~~~~~~~~~ ADMIN DECORATOR ~~~~~~~~~~~~~~~~~
+# Admin is the first user added to the database
 def admin_only(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
